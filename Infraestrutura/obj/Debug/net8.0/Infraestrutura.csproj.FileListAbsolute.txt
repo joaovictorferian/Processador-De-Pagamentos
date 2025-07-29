@@ -1,0 +1,15 @@
+C:\Users\joaov\source\repos\ProcessadorPagamentos\Infraestrutura\bin\Debug\net8.0\Infraestrutura.deps.json
+C:\Users\joaov\source\repos\ProcessadorPagamentos\Infraestrutura\bin\Debug\net8.0\Infraestrutura.dll
+C:\Users\joaov\source\repos\ProcessadorPagamentos\Infraestrutura\bin\Debug\net8.0\Infraestrutura.pdb
+C:\Users\joaov\source\repos\ProcessadorPagamentos\Infraestrutura\bin\Debug\net8.0\Core.dll
+C:\Users\joaov\source\repos\ProcessadorPagamentos\Infraestrutura\bin\Debug\net8.0\Core.pdb
+C:\Users\joaov\source\repos\ProcessadorPagamentos\Infraestrutura\obj\Debug\net8.0\Infraestrutura.csproj.AssemblyReference.cache
+C:\Users\joaov\source\repos\ProcessadorPagamentos\Infraestrutura\obj\Debug\net8.0\Infraestrutura.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joaov\source\repos\ProcessadorPagamentos\Infraestrutura\obj\Debug\net8.0\Infraestrutura.AssemblyInfoInputs.cache
+C:\Users\joaov\source\repos\ProcessadorPagamentos\Infraestrutura\obj\Debug\net8.0\Infraestrutura.AssemblyInfo.cs
+C:\Users\joaov\source\repos\ProcessadorPagamentos\Infraestrutura\obj\Debug\net8.0\Infraestrutura.csproj.CoreCompileInputs.cache
+C:\Users\joaov\source\repos\ProcessadorPagamentos\Infraestrutura\obj\Debug\net8.0\Infraest.A03DDDF3.Up2Date
+C:\Users\joaov\source\repos\ProcessadorPagamentos\Infraestrutura\obj\Debug\net8.0\Infraestrutura.dll
+C:\Users\joaov\source\repos\ProcessadorPagamentos\Infraestrutura\obj\Debug\net8.0\refint\Infraestrutura.dll
+C:\Users\joaov\source\repos\ProcessadorPagamentos\Infraestrutura\obj\Debug\net8.0\Infraestrutura.pdb
+C:\Users\joaov\source\repos\ProcessadorPagamentos\Infraestrutura\obj\Debug\net8.0\ref\Infraestrutura.dll
