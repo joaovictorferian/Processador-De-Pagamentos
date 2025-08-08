@@ -17,12 +17,31 @@ namespace Infraestrutura.Messaging
         {
             var factory = new ConnectionFactory
             {
-                HostName = "localhost"
+                HostName = "rabbitmq",
+                UserName = "guest",
+                Password = "guest"
             };
 
-            _connection = factory.CreateConnection();
-            _channel = _connection.CreateModel();
+            const int maxRetries = 5;
+            int retry = 0;
+
+            while (retry < maxRetries)
+            {
+                try
+                {
+                    _connection = factory.CreateConnection();
+                    _channel = _connection.CreateModel();
+                    break;
+                }
+                catch (Exception)
+                {
+                    retry++;
+                    Thread.Sleep(2000);
+                    if (retry == maxRetries) throw;
+                }
+            }
         }
+
 
         public Task PublishAsync(string queue, string message)
         {

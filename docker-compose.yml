@@ -1,23 +1,28 @@
 version: '3.8'
 
 services:
+  mongo:
+    image: mongo
+    container_name: mongo
+    ports:
+      - "27017:27017"
+
   rabbitmq:
     image: rabbitmq:3-management
     container_name: rabbitmq
     ports:
-      - "5672:5672"      
-      - "15672:15672"    
-    environment:
-      RABBITMQ_DEFAULT_USER: guest
-      RABBITMQ_DEFAULT_PASS: guest
+      - "5672:5672"
+      - "15672:15672" # interface web
 
-  mongo:
-    image: mongo
-    container_name: mongodb
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: payment-api
     ports:
-      - "27017:27017"
-    volumes:
-      - mongo_data:/data/db
-
-volumes:
-  mongo_data:
+      - "5000:5000"
+    depends_on:
+      - mongo
+      - rabbitmq
+    environment:
+      - ASPNETCORE_URLS=http://+:5000
