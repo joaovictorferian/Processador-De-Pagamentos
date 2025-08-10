@@ -36,7 +36,7 @@ namespace Infraestrutura.Messaging
                 catch (Exception)
                 {
                     retry++;
-                    Thread.Sleep(2000);
+                    Thread.Sleep(3000);
                     if (retry == maxRetries) throw;
                 }
             }
